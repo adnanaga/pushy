@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "SF-Light";
+  src: url("SF-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF-Medium";
+  src: url("SF-Medium.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.notificationBox {
+    width: 350pt;
+    border-radius: 16pt;
+    position:fixed;
+    top:10pt;
+    right:10%;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 6px 0px #ccc;
+    border: 0px solid #ACACAC;
+    z-index: 99999999999999999;
+    color:black;
+}
+
+
+.imageContainer {
+  position: absolute;
+  top:0;
+  left:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width:80pt;
+}
+
+.profilePic {
+    width:50%;
+    position: absolute;
+    left:14pt;
+    border-radius: 50%;
+    margin:0 !important;
+}
+
+.messageIcon {
+    width:25%;
+    position: relative;
+    top: 14pt;
+    left:12%;
+
+}
+
+.messageContainer{
+    margin-top: 15pt;
+    margin-bottom: 15pt;
+    align-content: space-between;
+    width:70%;
+}
+
+.title {
+    position: relative;
+    top:0pt;
+    left:70pt;
+    font-size:14pt;
+    font-family: "SF-Medium";
+}
+
+.message {
+    position: relative;
+    margin-top: 0pt;
+    left:70pt;
+    font-size:13pt;
+    display: -webkit-box;
+    line-height: 1.2;
+    font-family: "SF-Light";
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.slideIn {
+    -webkit-animation-name: cssAnimation;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  .slideOut {
+    -webkit-animation-name: cssAnimation2;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+  
+  @-webkit-keyframes cssAnimation {
+    from {
+      -webkit-transform: translate(100%);
+    }
+    to {
+      -webkit-transform: translate(30%);
+    }
+  }
+
+  @-webkit-keyframes cssAnimation2 {
+    from {
+      -webkit-transform: translate(30%);
+    }
+    to {
+      -webkit-transform: translate(150%);
+    }
+  }
+  

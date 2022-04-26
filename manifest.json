@@ -1,0 +1,17 @@
+{
+    "name": "Pushy!",
+    "manifest_version": 3,
+    "version": "0.1",
+    "description": "Get a notification on command",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+      "action": {
+    "default_popup": "popup.html"
+  },
+    "web_accessible_resources": [{
+        "resources": ["/resources/*"],
+        "matches": ["<all_urls>"]
+      }]
+  }

@@ -1,0 +1,30 @@
+{
+    "story1":
+    {
+        "character":"Cassie",
+        "delay1":10000,
+        "message1": "you packed me the wrong go gurt again",
+        "delay2":5000,
+        "message2": "you fucking idiot",
+        "delay3":30000,
+        "message3": "its okay i still love you"
+    },
+
+    "story2":
+    {
+        "character":"Jim",
+        "delay1":10000,
+        "message1": "hey wanna hear a joke",
+        "delay2":30000,
+        "message2": "what do you get when you mix human dna with goat dna",
+        "delay3":5000,
+        "message3": "kicked out of the petting zoo LOL"
+    },
+
+    "story3":
+    {
+        "character":"Jane",
+        "delay1":10000,
+        "message1": "You stink like the tuna!"
+    }
+}

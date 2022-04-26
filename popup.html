@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+      .header {
+            font-size: 20px;
+            text-align:    center;
+        }
+
+        .storyContainer {
+            display:flex;
+            flex-direction: row;
+            justify-content:space-around;
+        }
+        button {
+          background: #3498db;
+          border-radius: 18px;
+          font-size: 14px;
+          color: #ffffff;
+        }
+
+        button:hover {
+          background: #3cb0fd;
+          background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+          background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+          background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+          background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+          background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+          text-decoration: none;
+        }
+
+        button:active {
+          box-shadow: 0 5px #666;
+          transform: translateY(4px);
+        }
+
+        #form1 {
+          display: none;
+        }
+
+        #addNotification {
+          display: none;
+        }
+
+        #clickOut {
+          display:none;
+        }
+
+        #characterImage {
+          width:20%;
+          border-radius: 50%;
+        }
+
+        .characterSelector{
+          display:flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 0px 12px;
+        }
+
+        .messageForm {
+          margin: 0px 12px;
+        }
+
+    </style>
+  </head>
+  <body>
+   <div id="main">
+     <h2>Pushy!</h2>
+    <div class="header">Pick a story!</div>
+    <br>
+      <div class="storyContainer">
+        <button id="story1">Cassie's Yoghurt Mixup</button>
+        <button id="story2">Uncle Jims Dumb Joke</button>
+        <button id="story3">Stinky!</button>
+        <button id="story4">A Diaper Emergency</button>
+        <button id="story5">Smize</button>
+        <button id="storyDIY">Write your own!</button>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="makeYourOwn">
+        <form id="form1">
+          <div class="characterSelector">
+            <div>
+                <label for="Character">Character:</label>
+                <select name="Character" id="character">
+                  <option value="Cassie">Cassie</option>
+                  <option value="Jim" selected>Uncle Jim</option>
+                  <option value="Roberto">Roberto</option>
+                  <option value="Jane">Jane</option>
+                </select>
+            </div>
+            <img src="resources/Cassie.jpg" id="characterImage">
+          </div>
+      <br>
+      <br>
+
+          <div class="messageForm" id="messageForm">
+            
+            <div id="notification1">
+              <label for="delay1">Time before notification 1:</label>
+              <br>
+              <select name="delay1" id="delay1">
+                <option value="5000">5 Seconds</option>
+                <option value="10000" selected>10 Seconds</option>
+                <option value="30000">30 Seconds</option>
+                <option value="60000">60 Seconds</option>
+              </select>
+              <br>
+                <label for="message1">Write your message for notification 1:</label>
+                <input type="text" id="message1" name="message1" value="" style="width: 300px;" maxlength="280">
+            </div>
+            <br>
+          </div>
+          <input type="submit" value="Send Notifications">
+          <button type="button" id= "addNotification" value="Add"> Add Notification</button>
+        </form>
+    </div>
+
+    </div>
+
+    <div id="clickOut">
+      Nice!
+      Click back to your website
+    </div>
+
+    
+  </body>
+</html>
+<script src="popup.js"></script>
