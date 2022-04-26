@@ -1,5 +1,9 @@
 # Pushy!
 
+Create awkward situations with my chrome extension that send you messages that look like an iMessage popup
+
+This is a work in progress - Still looking to make a webpage for it.
+
 ## Install
 1. Open the Extension Management page by navigating to chrome://extensions or click here
 [Chrome Exntensions](chrome://extensions)
