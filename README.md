@@ -8,7 +8,7 @@ This is a work in progress - Still looking to make a webpage for it.
 1. Open the Extension Management page by navigating to chrome://extensions or click here
 [Chrome Exntensions](chrome://extensions)
 
-2.Enable Developer Mode by clicking the toggle switch next to Developer mode.
+2. Enable Developer Mode by clicking the toggle switch next to Developer mode.
 
 3. Click the Load unpacked button and select pushy.zip
 
